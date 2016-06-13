@@ -6,7 +6,7 @@ There is blog application which is divided into steps.
 
 ## Lessons
 
-### Lesson 1 ([Start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l1-start))
+### Lesson 1 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l1-start), tag "l1-start")
 
 Create basic React blog application:
  - should'n use JSX
