@@ -11,8 +11,8 @@ var blogItems = [
   },
   {
     id: 2,
-    title: 'Item title 1',
-    text: 'Item text 1',
+    title: 'Item title 2',
+    text: 'Item text 2',
     isRead: false
   }
 ];

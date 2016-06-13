@@ -2,22 +2,11 @@ import React from 'react';
 import './App.css';
 import BlogItemList from './BlogItemList';
 
-export default function (props) {
-  return React.createElement(
-    'section',
-    {
-      className: 'App'
-    },
-    React.createElement(
-      'h1',
-      null,
-      'Blog title'
-    ),
-    React.createElement(
-      BlogItemList,
-      {
-        items: props.items
-      }
-    )
+export default (props) => {
+  return (
+    <section className="App">
+      <h1>Blog title</h1>
+      <BlogItemList items={props.items} />
+    </section>
   );
 };
