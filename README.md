@@ -11,23 +11,24 @@ There is blog application which is divided into steps.
 Create basic React blog application:
  - should'n use JSX
  - should have components: App, BlogItemList, BlogItem, Button
- - should generate HTML:
- ```html
- <section>
-     <h1>Blog title</h1>
-     <article>
-         <h1>Blog item title 1</h1>
-         <button>Mark as Read</button>
-         <p>Item text 1</p>
-     </article>
-     <article>
-         <h1>Blog item title 2</h1>
-         <button>Mark as Unread</button>
-         <p>Item text 1</p>
-     </article>
- </section>
- ```
  - should have toggle button which should change font weight of item title ("Mark as Unread" / "Mark as Read")
+ - should generate HTML:
+
+```html
+<section>
+  <h1>Blog title</h1>
+  <article>
+      <h1>Blog item title 1</h1>
+      <button>Mark as Read</button>
+      <p>Item text 1</p>
+  </article>
+  <article>
+      <h1>Blog item title 2</h1>
+      <button>Mark as Unread</button>
+      <p>Item text 1</p>
+  </article>
+</section>
+```
 
 ### Materials
  - Introduction
