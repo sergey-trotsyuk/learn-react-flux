@@ -68,3 +68,7 @@ Apply JSX for application:
    - https://habrahabr.ru/post/262183/
    - https://facebook.github.io/react/docs/reusable-components.html#es6-classes
    - https://babeljs.io/blog/2015/06/07/react-on-es6-plus
+ - JSX
+   - https://facebook.github.io/react/docs/jsx-in-depth.html
+   - https://facebook.github.io/react/docs/jsx-gotchas.html
+   - https://facebook.github.io/react/tips/self-closing-tag.html
