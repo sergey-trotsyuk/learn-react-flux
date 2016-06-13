@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "App for learning React and Flux",
   "scripts": {
-    "start": "npm run build && static -p 3000 ./dist",
+    "start": "npm run dev",
+    "dev": "webpack-dev-server",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,7 +31,7 @@
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "node-static": "^0.7.7",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }

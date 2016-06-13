@@ -34,5 +34,8 @@ module.exports = {
         from: 'favicon.ico'
       }
     ])
-  ]
+  ],
+  devServer: {
+    port: 3000
+  }
 };
