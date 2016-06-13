@@ -53,13 +53,13 @@ Apply JSX for application:
  - JSX files should have ".js" extensions
  - build application should contain: index.html, main.js, main.css
 
-Intermediate tags: l2-done-webpack, l2-done-es6-jsx
+Intermediate tags: l2-done-webpack, l2-done-es6-jsx, l2-done-webpack-dev-server
 
 ### Materials
  - Webpack
    - https://webpack.github.io/docs/tutorials/getting-started/
    - http://frontender.info/packing-the-web-like-a-boss/
-   - https://mistakster.github.io/fronttalks-webpack/
+   - https://habrahabr.ru/post/265801/
    - https://learn.javascript.ru/screencast/webpack
    - https://webpack.github.io/docs/webpack-dev-server.html
    - https://habrahabr.ru/company/Voximplant/blog/270593/
@@ -75,3 +75,23 @@ Intermediate tags: l2-done-webpack, l2-done-es6-jsx
    - https://facebook.github.io/react/docs/jsx-gotchas.html
    - https://facebook.github.io/react/tips/self-closing-tag.html
 
+### Lesson 3 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l3-start), tag "l3-start")
+
+Add jQuery plugin and CSS Modules:
+ - should use [jQuery Tooltip](https://github.com/ianmcburnie/jquery-tooltip) for button titles ([demo](http://swip.codylindley.com/tooltipDemo.html))
+ - should use refs for work with DOM
+ - should use CSS Modules for all CSS files
+
+### Materials
+ - jQuery Tooltip
+   - https://github.com/ianmcburnie/jquery-tooltip
+   - http://swip.codylindley.com/tooltipDemo.html
+ - React and DOM
+   - https://facebook.github.io/react/docs/working-with-the-browser.html
+   - https://facebook.github.io/react/docs/more-about-refs.html
+   - https://egghead.io/lessons/react-using-react-with-the-fullcalendar-jquery-plugin
+ - CSS Modules
+  - https://habrahabr.ru/post/276417/
+  - https://github.com/css-modules/css-modules
+  - https://github.com/css-modules/webpack-demo
+  - http://glenmaddern.com/articles/css-modules
