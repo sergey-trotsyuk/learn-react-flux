@@ -1,4 +1,8 @@
-var App = function (props) {
+import React from 'react';
+import './App.css';
+import BlogItemList from './BlogItemList';
+
+export default function (props) {
   return React.createElement(
     'section',
     {

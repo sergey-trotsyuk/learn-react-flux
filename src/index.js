@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+
 var blogItems = [
   {
     id: 1,

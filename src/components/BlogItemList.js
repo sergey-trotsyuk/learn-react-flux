@@ -1,4 +1,8 @@
-var BlogItemList = React.createClass({
+import React from 'react';
+import './BlogItemList.css';
+import BlogItem from './BlogItem';
+
+export default React.createClass({
   propTypes: {
     items: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
   },

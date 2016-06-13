@@ -1,4 +1,8 @@
-var BlogItem = React.createClass({
+import React from 'react';
+import './BlogItem.css';
+import Button from './Button';
+
+export default React.createClass({
   propTypes: {
     id: React.PropTypes.number.isRequired,
     title: React.PropTypes.string.isRequired,
