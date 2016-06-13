@@ -53,6 +53,8 @@ Apply JSX for application:
  - JSX files should have ".js" extensions
  - build application should contain: index.html, main.js, main.css
 
+Intermediate tags: l2-done-webpack, l2-done-es6-jsx
+
 ### Materials
  - Webpack
    - https://webpack.github.io/docs/tutorials/getting-started/
@@ -72,3 +74,4 @@ Apply JSX for application:
    - https://facebook.github.io/react/docs/jsx-in-depth.html
    - https://facebook.github.io/react/docs/jsx-gotchas.html
    - https://facebook.github.io/react/tips/self-closing-tag.html
+
