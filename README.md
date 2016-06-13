@@ -9,7 +9,7 @@ There is blog application which is divided into steps.
 ### Lesson 1 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l1-start), tag "l1-start")
 
 Create basic React blog application:
- - should'n use JSX
+ - shouldn't use JSX
  - should have components: App, BlogItemList, BlogItem, Button
  - should have toggle button which should change font weight of item title ("Mark as Unread" / "Mark as Read")
  - should generate HTML:
