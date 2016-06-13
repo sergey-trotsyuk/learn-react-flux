@@ -1,0 +1,26 @@
+{
+  "name": "learn-react-flux",
+  "version": "1.0.0",
+  "description": "App for learning React and Flux",
+  "scripts": {
+    "start": "static -p 3000 .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergey-trotsyuk/learn-react-flux.git"
+  },
+  "author": "Sergey Trotsyuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergey-trotsyuk/learn-react-flux/issues"
+  },
+  "homepage": "https://github.com/sergey-trotsyuk/learn-react-flux#readme",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.7"
+  }
+}
