@@ -42,3 +42,29 @@ Create basic React blog application:
    - https://facebook.github.io/react/docs/component-specs.html
  - JSX to JS Online - https://babeljs.io/repl/#?evaluate=false&lineWrap=false&presets=es2015%2Creact
  - React component example without JSX - https://github.com/mopsek/reactjs-progressive-learning-app/blob/1a77dc6d5afd80bf1f7d4f21fb64372a9d3f8a19/dist/bundle.js#L201
+
+### Lesson 2 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l2-start), tag "l2-start")
+
+Apply JSX for application:
+ - should use "src" dir for all sources and "dist" for build application
+ - should use minimal Webpack configuration
+ - should use Webpack dev server
+ - rewrite components with JSX and ES6
+ - JSX files should have ".js" extensions
+ - build application should contain: index.html, main.js, main.css
+
+### Materials
+ - Webpack
+   - https://webpack.github.io/docs/tutorials/getting-started/
+   - http://frontender.info/packing-the-web-like-a-boss/
+   - https://mistakster.github.io/fronttalks-webpack/
+   - https://learn.javascript.ru/screencast/webpack
+   - https://webpack.github.io/docs/webpack-dev-server.html
+   - https://habrahabr.ru/company/Voximplant/blog/270593/
+ - Webpack loaders
+  - https://webpack.github.io/docs/stylesheets.html
+  - https://github.com/babel/babel-loader
+ - React & ES6
+   - https://habrahabr.ru/post/262183/
+   - https://facebook.github.io/react/docs/reusable-components.html#es6-classes
+   - https://babeljs.io/blog/2015/06/07/react-on-es6-plus
