@@ -78,7 +78,8 @@ Intermediate tags: l2-done-webpack, l2-done-es6-jsx, l2-done-webpack-dev-server
 ### Lesson 3 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l3-start), tag "l3-start")
 
 Add jQuery plugin and CSS Modules:
- - should use [jQuery Tooltip](https://github.com/ianmcburnie/jquery-tooltip) for button titles ([demo](http://swip.codylindley.com/tooltipDemo.html))
+ - should use [jQuery UI Tooltip](https://www.npmjs.com/package/jquery-ui) for button titles ([demo](https://jqueryui.com/tooltip/))
+ - should use jquery-ui@1.10.4 and jquery@1.12.4
  - should use refs for work with DOM
  - should use CSS Modules for all CSS files
 
