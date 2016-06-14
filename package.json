@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/sergey-trotsyuk/learn-react-flux#readme",
   "dependencies": {
+    "classnames": "^2.2.5",
+    "jquery": "^1.12.4",
+    "jquery-ui": "^1.10.4",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   },
@@ -31,6 +34,7 @@
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "path": "^0.12.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }

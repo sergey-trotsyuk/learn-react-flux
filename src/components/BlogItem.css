@@ -1,7 +1,26 @@
-.BlogItem {
+.common {
+  font-style: italic;
+}
+
+.normal {
 
 }
 
-.BlogItem-Title {
+.Title {
+  composes: common;
+
+  font-weight: bold;
   color: cornflowerblue;
+}
+
+.TitleIsRead {
+  font-weight: normal;
+}
+
+.Button {
+  composes: common;
+}
+
+.Text {
+  composes: common;
 }

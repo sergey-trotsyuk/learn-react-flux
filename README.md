@@ -95,3 +95,24 @@ Add jQuery plugin and CSS Modules:
   - https://github.com/css-modules/css-modules
   - https://github.com/css-modules/webpack-demo
   - http://glenmaddern.com/articles/css-modules
+
+### Lesson 4 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l4-start), tag "l4-start")
+
+Add Flux architecture:
+ - should use store for blog items
+ - should use actions and action creators
+ - should use dispatcher module
+ - should use classic Facebook utils
+
+### Materials
+ - Flux
+   - https://habrahabr.ru/post/246959/
+   - https://habrahabr.ru/post/249279/
+   - https://habrahabr.ru/company/hexlet/blog/268249/
+   - https://facebook.github.io/flux/
+ - Facebook Utils
+   - https://github.com/facebook/flux
+ - Examples
+  - https://github.com/facebook/flux/tree/master/examples/flux-todomvc
+  - https://github.com/facebook/flux/tree/master/examples/flux-chat
+  - https://github.com/facebook/flux/tree/master/examples/flux-utils-todomvc

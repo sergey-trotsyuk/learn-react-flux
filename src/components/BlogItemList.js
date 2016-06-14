@@ -1,5 +1,5 @@
 import React from 'react';
-import './BlogItemList.css';
+import styles from './BlogItemList.css';
 import BlogItem from './BlogItem';
 
 export default class BlogItemList extends React.Component {
@@ -17,7 +17,7 @@ export default class BlogItemList extends React.Component {
     }, this);
 
     return (
-      <div className="BlogItemList">{items}</div>
+      <div className={styles.normal}>{items}</div>
     );
   }
 };

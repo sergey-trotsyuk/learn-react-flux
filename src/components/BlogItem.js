@@ -1,5 +1,6 @@
 import React from 'react';
-import './BlogItem.css';
+import classNames from 'classnames';
+import styles from './BlogItem.css';
 import Button from './Button';
 
 export default class BlogItem extends React.Component {
@@ -32,11 +33,12 @@ export default class BlogItem extends React.Component {
   }
 
   render() {
+    // console.log('!!! this.onClick', this.onClick);
     return (
-      <article className="BlogItem">
-        <h1 className="BlogItem-Title" style={{fontWeight: this.state.isRead? 'normal': 'bold'}}>{this.props.title}</h1>
-        <Button onClick={this.onClick}>{this.state.isRead? 'Mark as Unread': 'Mark as Read'}</Button>
-        <p>{this.props.text}</p>
+      <article className={styles.normal}>
+        <h1 className={classNames(styles.Title, {[styles.TitleIsRead]: this.state.isRead})}>{this.props.title}</h1>
+        <Button className={styles.Button} onClick={this.onClick}>{this.state.isRead? 'Mark as Unread': 'Mark as Read'}</Button>
+        <p className={styles.Text}>{this.props.text}</p>
       </article>
     );
   }
