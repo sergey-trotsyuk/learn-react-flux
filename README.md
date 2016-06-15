@@ -99,11 +99,12 @@ Add jQuery plugin and CSS Modules:
 
 ### Lesson 4 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l4-start), tag "l4-start")
 
-Add Flux architecture:
+Add Flux architecture and blog item view:
  - should use store for blog items
  - should use actions and action creators
  - should use dispatcher module
  - should use classic Facebook utils
+ - should change URL (after #) for blog item view
 
 ### Materials
  - Flux
@@ -113,6 +114,9 @@ Add Flux architecture:
    - https://facebook.github.io/flux/
  - Facebook Utils
    - https://github.com/facebook/flux
+ - React Router
+   - https://github.com/reactjs/react-router
+   - https://maxfarseer.gitbooks.io/react-router-course-ru/content/
  - Examples
   - https://github.com/facebook/flux/tree/master/examples/flux-todomvc
   - https://github.com/facebook/flux/tree/master/examples/flux-chat
