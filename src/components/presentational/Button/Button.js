@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import $ from 'jquery';
 import 'jquery-ui/tooltip';
@@ -27,10 +28,20 @@ export default class Button extends React.Component {
   }
 
   render() {
+    // Classes
+    var className = classNames(
+      styles.normal,
+      this.props.className
+    );
+
+    // Props
+    var props = Object.assign({}, this.props, {
+      className:  className
+    });
+
     return (
       <button
-        className={styles.normal}
-        onClick={this.props.onClick}
+        {...props}
         ref={(node) => this.buttonNode = node}
         title={this.props.children}>{this.props.children}</button>
     );
