@@ -121,3 +121,18 @@ Add Flux architecture and blog item view:
   - https://github.com/facebook/flux/tree/master/examples/flux-todomvc
   - https://github.com/facebook/flux/tree/master/examples/flux-chat
   - https://github.com/facebook/flux/tree/master/examples/flux-utils-todomvc
+
+### Lesson 5 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l5-start), tag "l5-start")
+
+Replace Flux with Reflux:
+ - should have same structure except removed dispatcher layer
+
+### Materials
+ - Reflux
+   - https://habrahabr.ru/post/250581/
+   - https://github.com/reflux/refluxjs#comparing-refluxjs-with-facebook-flux
+   - https://github.com/reflux/refluxjs
+ - Examples
+  - https://github.com/reflux/refluxjs-todo
+  - https://github.com/echenley/react-news
+  - https://github.com/akornatskyy/sample-blog-react
