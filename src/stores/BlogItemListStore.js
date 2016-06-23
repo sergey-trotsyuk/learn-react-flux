@@ -1,81 +1,58 @@
-import EventEmitter from 'events';
+import Reflux from 'reflux';
 
-import appDispatcher from '../dispatchers/AppDispatcher';
-import blogItemListConstants from '../constants/BlogItemListConstants'
+import BlogItemListActions from '../actions/BlogItemListActions';
 
-const store = {
-  items: [
-    {
-      id: 1,
-      title: 'Item title 1',
-      text: 'Item text 1',
-      isRead: false
-    },
-    {
-      id: 2,
-      title: 'Item title 2',
-      text: 'Item text 2',
-      isRead: false
-    }
-  ]
-};
+const items = [
+  {
+    id: 1,
+    title: 'Item title 1',
+    text: 'Item text 1',
+    isRead: false
+  },
+  {
+    id: 2,
+    title: 'Item title 2',
+    text: 'Item text 2',
+    isRead: false
+  }
+];
 
-const EVENT_CHANGE = 'change';
+export default Reflux.createStore({
+  listenables: BlogItemListActions,
 
+  getInitialState() {
+    return items;
+  },
 
-class BlogItemStore extends EventEmitter {
-  dispatchToken = null;
+  onMarkRead(blogItemId) {
+    this.markRead(
+      parseInt(blogItemId, 10)
+    );
+  },
+
+  onMarkUnread(blogItemId) {
+    this.markUnread(
+      parseInt(blogItemId, 10)
+    );
+  },
 
   getItemById(itemId) {
-    return store.items.find((item) => {
+    return items.find((item) => {
       return item.id === itemId;
     });
-  }
-
-  getItems() {
-    return store.items;
-  }
+  },
 
   markRead(itemId) {
     this.getItemById(itemId).isRead = true;
-    this.emitChange();
-  }
+    this.triggerData();
+  },
 
   markUnread(itemId) {
     this.getItemById(itemId).isRead = false;
-    this.emitChange();
-  }
+    this.triggerData();
+  },
 
-  emitChange() {
-    this.emit(EVENT_CHANGE);
-  }
-
-  addChangeListener(listener) {
-    this.on(EVENT_CHANGE, listener);
-  }
-
-  removeChangeListener(listener) {
-    this.removeListener(EVENT_CHANGE, listener);
-  }
-}
-
-const blogItemStore = new BlogItemStore();
-
-blogItemStore.dispatchToken = appDispatcher.register(function(action) {
-  switch(action.actionType) {
-    case blogItemListConstants.BLOG_ITEM_LIST_MARK_READ:
-      blogItemStore.markRead(
-        parseInt(action.blogItemId, 10)
-      );
-
-      break;
-
-    case blogItemListConstants.BLOG_ITEM_LIST_MARK_UNREAD:
-      blogItemStore.markUnread(
-        parseInt(action.blogItemId, 10)
-      );
-      break;
+  triggerData() {
+    this.trigger(items);
   }
 });
-
-export default blogItemStore;

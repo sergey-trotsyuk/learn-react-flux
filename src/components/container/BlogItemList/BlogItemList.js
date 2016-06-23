@@ -1,38 +1,25 @@
 import React from 'react';
+import Reflux from 'reflux';
 import styles from './BlogItemList.css';
 import BlogItem from '../BlogItem/BlogItem';
 
 import BlogItemListStore from '../../../stores/BlogItemListStore';
 import BlogItemListActions from '../../../actions/BlogItemListActions';
 
-export default class BlogItemList extends React.Component {
-  state = this.getLatestState();
+export default React.createClass({
+  displayName: 'BlogItemList',
 
-  componentDidMount() {
-    BlogItemListStore.addChangeListener(this.onStoreChange);
-  }
-
-  componentWillUnmount() {
-    BlogItemListStore.removeChangeListener(this.onStoreChange);
-  }
-
-  getLatestState() {
-    return {
-      items: BlogItemListStore.getItems()
-    }
-  }
-
-  onStoreChange = () => {
-    this.setState(this.getLatestState());
-  }
-
-  onItemMarkClick = (isRead, itemId) => {
+  mixins: [
+    Reflux.connect(BlogItemListStore, 'items')
+  ],
+  
+  onItemMarkClick(isRead, itemId) {
     if (isRead) {
       BlogItemListActions.markRead(itemId);
     } else {
       BlogItemListActions.markUnread(itemId);
     }
-  }
+  },
 
   render() {
     var items = this.state.items.map((item) => {
@@ -43,4 +30,4 @@ export default class BlogItemList extends React.Component {
       <div className={styles.normal}>{items}</div>
     );
   }
-};
+});

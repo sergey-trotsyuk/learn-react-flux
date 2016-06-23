@@ -1,3 +1,4 @@
+import Reflux from 'reflux';
 import React from 'react';
 
 import styles from './BlogItemDetailed.css';
@@ -8,24 +9,34 @@ import Paragraph from '../../presentational/Paragraph/Paragraph';
 import BlogItemListStore from '../../../stores/BlogItemListStore';
 import BlogItemListActions from '../../../actions/BlogItemListActions';
 
-export default class BlogItem extends React.Component {
-  static propTypes = {
+export default React.createClass({
+  displayName: 'BlogItem',
+
+  mixins: [
+    Reflux.connectFilter(BlogItemListStore, 'item', function (items) {
+      return items.find((item) => {
+        return (item.id === parseInt(this.props.params.id, 10));
+      });
+    })
+  ],
+
+  propTypes: {
     params: React.PropTypes.shape({
       id: React.PropTypes.string.isRequired
     }).isRequired
-  }
+  },
 
-  static defaultProps = {
-    id: null
-  }
-
-  state = {
-    item: BlogItemListStore.getItemById(parseInt(this.props.params.id, 10))
-  }
+  getDefaultProps() {
+    return {
+      params: {
+        id: null
+      }
+    };
+  },
 
   componentDidMount() {
-    BlogItemListActions.markRead();
-  }
+    BlogItemListActions.markRead(this.state.item.id);
+  },
 
   render() {
     return (
@@ -35,4 +46,4 @@ export default class BlogItem extends React.Component {
       </Article>
     );
   }
-};
+});
