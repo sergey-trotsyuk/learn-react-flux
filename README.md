@@ -92,10 +92,10 @@ Add jQuery plugin and CSS Modules:
    - https://facebook.github.io/react/docs/more-about-refs.html
    - https://egghead.io/lessons/react-using-react-with-the-fullcalendar-jquery-plugin
  - CSS Modules
-  - https://habrahabr.ru/post/276417/
-  - https://github.com/css-modules/css-modules
-  - https://github.com/css-modules/webpack-demo
-  - http://glenmaddern.com/articles/css-modules
+   - https://habrahabr.ru/post/276417/
+   - https://github.com/css-modules/css-modules
+   - https://github.com/css-modules/webpack-demo
+   - http://glenmaddern.com/articles/css-modules
 
 ### Lesson 4 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l4-start), tag "l4-start")
 
@@ -118,9 +118,9 @@ Add Flux architecture and blog item view:
    - https://github.com/reactjs/react-router
    - https://maxfarseer.gitbooks.io/react-router-course-ru/content/
  - Examples
-  - https://github.com/facebook/flux/tree/master/examples/flux-todomvc
-  - https://github.com/facebook/flux/tree/master/examples/flux-chat
-  - https://github.com/facebook/flux/tree/master/examples/flux-utils-todomvc
+   - https://github.com/facebook/flux/tree/master/examples/flux-todomvc
+   - https://github.com/facebook/flux/tree/master/examples/flux-chat
+   - https://github.com/facebook/flux/tree/master/examples/flux-utils-todomvc
 
 ### Lesson 5 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l5-start), tag "l5-start")
 
@@ -133,6 +133,26 @@ Replace Flux with Reflux:
    - https://github.com/reflux/refluxjs#comparing-refluxjs-with-facebook-flux
    - https://github.com/reflux/refluxjs
  - Examples
-  - https://github.com/reflux/refluxjs-todo
-  - https://github.com/echenley/react-news
-  - https://github.com/akornatskyy/sample-blog-react
+   - https://github.com/reflux/refluxjs-todo
+   - https://github.com/echenley/react-news
+   - https://github.com/akornatskyy/sample-blog-react
+
+### Lesson 6 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l6-start), tag "l6-start")
+
+Replace Reflux with Redux:
+ - should use hot module replacement with webpack dev server
+
+### Materials
+ - Redux
+   - https://medium.com/russian/a-cartoon-intro-to-redux-e2108896f7e6
+   - https://maxfarseer.gitbooks.io/redux-course-ru/content/
+   - https://toster.ru/q/270962
+   - http://redux.js.org/
+   - https://github.com/reactjs/redux
+   - https://github.com/rajdee/redux-in-russian - Не официальная документация на русском
+ - HMR (Hot Module Replacement)
+   - https://maxfarseer.gitbooks.io/redux-course-ru/content/es2015,_react_hmr.html
+   - https://webpack.github.io/docs/hot-module-replacement.html
+ - Examples
+   - http://redux.js.org/docs/basics/ExampleTodoList.html
+   - https://github.com/reactjs/redux/tree/master/examples
