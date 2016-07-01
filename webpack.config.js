@@ -6,7 +6,12 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 console.log(path.resolve(__dirname) + '/node_modules/jquery-tooltip/jquery.tooltip.js');
 module.exports = {
   context: __dirname + '/src',
-  entry: './index',
+  entry: [
+    'webpack-dev-server/client?http://0.0.0.0:3000',
+    'webpack/hot/only-dev-server',
+    'webpack-hot-middleware/client',
+    './index'
+  ],
   output: {
     path: __dirname + '/dist',
     filename: 'main.js'
@@ -16,10 +21,7 @@ module.exports = {
       {
         test: /\.js?$/,
         exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015', 'stage-1', 'react']
-        }
+        loaders: ['react-hot', 'babel?presets[]=es2015&presets[]=stage-1&presets[]=react']
       },
       {
         test: /\.css$/,
@@ -41,9 +43,11 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    port: 3000
+    port: 3000,
+    hot: true
   }
 };

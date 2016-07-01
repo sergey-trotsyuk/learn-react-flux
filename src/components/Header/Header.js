@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component, PropTypes} from 'react';
 import classNames from 'classnames';
 
 import styles from './Header.css';
 
-export default class Header extends React.Component {
+export default class Header extends Component {
   propTypes: {
-    className: React.PropTypes.string
+    className: PropTypes.string
   }
 
   render() {

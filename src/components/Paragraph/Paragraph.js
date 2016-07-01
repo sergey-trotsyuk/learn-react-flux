@@ -1,27 +1,27 @@
-import React from 'react';
+import React, {Component, PropTypes} from 'react';
 import classNames from 'classnames';
 
-import styles from './Article.css';
+import styles from './Paragraph.css';
 
-export default class Article extends React.Component {
+export default class Paragraph extends Component {
   propTypes: {
-    className: React.PropTypes.string
+    className: PropTypes.string
   }
-  
+
   render() {
     // Classes
     var className = classNames(
       styles.normal,
       this.props.className
     );
-    
+
     // Props
     var props = Object.assign({}, this.props, {
       className:  className
     });
-    
+
     return (
-      <article {...props}>{this.props.children}</article>
+      <p {...props}>{this.props.children}</p>
     );
   }
 };
