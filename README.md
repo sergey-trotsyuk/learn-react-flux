@@ -164,8 +164,9 @@ Add some unit tests:
  - should not use Jest
  - should cover 1 reducer
  - should cover 1 component
- - should cover 1 pair of mapStateToProps and mapDispatchToProps for 1 connected component (with **export** map<State|Dispatch>ToProps)
+ - should cover 1 pair of mapStateToProps and mapDispatchToProps for 1 connected component (with ```export map<State|Dispatch>ToProps```)
  - should cover 1 action
+ - optional use Enzyme
 
 
 ### Materials
@@ -181,3 +182,5 @@ Add some unit tests:
  - Examples
    - https://habrahabr.ru/company/rambler-co/blog/278503/
    - http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html
+ - Enzyme
+   - https://github.com/airbnb/enzyme
