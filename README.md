@@ -156,3 +156,28 @@ Replace Reflux with Redux:
  - Examples
    - http://redux.js.org/docs/basics/ExampleTodoList.html
    - https://github.com/reactjs/redux/tree/master/examples
+
+### Lesson 7 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l7-start), tag "l7-start")
+
+Add some unit tests:
+ - should use React Test Utils, Karma, Jasmine
+ - should not use Jest
+ - should cover 1 reducer
+ - should cover 1 component
+ - should cover 1 pair of mapStateToProps and mapDispatchToProps for 1 connected component (with **export** map<State|Dispatch>ToProps)
+ - should cover 1 action
+
+
+### Materials
+ - Build
+   - https://habrahabr.ru/company/rambler-co/blog/278503/
+   - https://www.codementor.io/reactjs/tutorial/test-reactjs-components-karma-webpack
+   - https://github.com/webpack/karma-webpack
+ - Tests for React components
+   - https://facebook.github.io/react/docs/test-utils.html
+   - http://reactkungfu.com/2015/07/approaches-to-testing-react-components-an-overview/
+ - Tests for Redux
+   - http://redux.js.org/docs/recipes/WritingTests.html
+ - Examples
+   - https://habrahabr.ru/company/rambler-co/blog/278503/
+   - http://myshareoftech.com/2013/12/unit-testing-react-dot-js-with-jasmine-and-karma.html
