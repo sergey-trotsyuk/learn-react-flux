@@ -160,13 +160,11 @@ Replace Reflux with Redux:
 ### Lesson 7 ([start](https://github.com/sergey-trotsyuk/learn-react-flux/tree/l7-start), tag "l7-start")
 
 Add some unit tests:
- - should use React Test Utils, Karma, Jasmine
- - should not use Jest
+ - should use React Test Utils, Mocha, jsdom
  - should cover 1 reducer
  - should cover 1 component
  - should cover 1 pair of mapStateToProps and mapDispatchToProps for 1 connected component (with ```export map<State|Dispatch>ToProps```)
  - should cover 1 action
- - optional use Enzyme
 
 
 ### Materials
