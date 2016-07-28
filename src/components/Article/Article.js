@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import styles from './Article.css';
 
 export default class Article extends Component {
-  propTypes: {
+  static propTypes = {
     className: PropTypes.string
   }
   

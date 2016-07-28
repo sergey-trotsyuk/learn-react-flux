@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import styles from './Header.css';
 
 export default class Header extends Component {
-  propTypes: {
+  static propTypes = {
     className: PropTypes.string
   }
 

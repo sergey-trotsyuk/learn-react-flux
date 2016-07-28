@@ -3,7 +3,6 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-console.log(path.resolve(__dirname) + '/node_modules/jquery-tooltip/jquery.tooltip.js');
 module.exports = {
   context: __dirname + '/src',
   entry: [

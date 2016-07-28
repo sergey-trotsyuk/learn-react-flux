@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import styles from './Paragraph.css';
 
 export default class Paragraph extends Component {
-  propTypes: {
+  static propTypes = {
     className: PropTypes.string
   }
 

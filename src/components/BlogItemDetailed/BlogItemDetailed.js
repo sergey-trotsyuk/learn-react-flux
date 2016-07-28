@@ -7,7 +7,7 @@ import Header from '../Header/Header';
 import Paragraph from '../Paragraph/Paragraph';
 
 export default class BlogItemDetailed extends Component {
-  propTypes: {
+  static propTypes = {
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
@@ -15,7 +15,7 @@ export default class BlogItemDetailed extends Component {
   }
 
   componentDidMount() {
-    this.props.onMarkRead();
+    this.props.onMarkRead(this.props.id);
   }
 
   render() {
